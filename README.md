@@ -1,5 +1,5 @@
 # Competitive-Programming
-Solution of competitive programming contests.
+Solution of competitive programming contests.<br>
 Contest of Codeforces
 Contest of Codechef
 Contest of Leetcode
