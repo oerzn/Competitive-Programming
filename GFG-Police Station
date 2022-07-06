@@ -1,0 +1,39 @@
+<h3> Job-A-Thon Amazon Alexa july 5 </h3>
+<h2> Police station </h2>
+
+
+
+
+from typing import List
+
+class Solution:
+    def solve(self, N : int, a : int , x : List[int]) -> int:
+        k = [] 
+        # code here
+        for i in range(N):
+            
+            k.append(abs(a - x[i]))
+        lst = k
+        maximum1 = max(lst)
+        o = sorted(lst)
+        o.pop()
+        maximum2 = max(o)
+        return (maximum1+maximum2)       
+
+
+
+
+if __name__=="__main__":
+    t = int(input())
+    for _ in range(t):
+        
+        N,A = [int(i) for i in input().split()]
+        
+        
+        X = [int(i) for i in input().split()]
+        
+        obj = Solution()
+        res = obj.solve(N,A,X)
+        
+        print(res)
+ 
